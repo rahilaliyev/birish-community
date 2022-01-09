@@ -4,7 +4,7 @@ import "./assets/styles/fonts.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
-import Forum from "./components/Forum/Forum"
+import Forum from "./components/Forum/Forum";
 
 const App = () => {
   return (
