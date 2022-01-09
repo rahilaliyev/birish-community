@@ -1,0 +1,39 @@
+@import "../../assets/styles/variables.scss";
+
+footer {
+  padding: 55px 0;
+  background-color: $footerBg;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    ul {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 31px;
+      li {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 9px;
+      }
+    }
+    h4 {
+      margin: 0 0 16px 0;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+    .social-medias {
+      img {
+        margin-right: 20px;
+      }
+      margin-bottom: 5px;
+    }
+    p {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../assets/styles/variables.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  .logo {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 36px;
+      line-height: 47px;
+      color: $paragraphGrey;
+      margin-left: 15px;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {  
+        .active {
+          border-bottom: 5px solid $mainColor;
+        }
+        a {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0em;
+          text-align: center;
+          padding: 27px 30px;
+        }
+        button {
+          border: 1px solid $mainColor;
+          margin-left: 20px;
+          a {
+            color: $mainColor;
+          }
+        }
+        &:last-child {
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

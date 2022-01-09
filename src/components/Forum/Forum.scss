@@ -1,0 +1,160 @@
+@import "../../assets/styles/variables.scss";
+
+.search {
+  background-image: url(../../assets/images/searchBgImage.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  .search-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    span {
+      font-weight: 900;
+    }
+    form {
+      display: flex;
+      margin-top: 20px;
+      input {
+        width: 280px;
+        height: 43px;
+        outline: none;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        padding-left: 12px;
+      }
+      ::placeholder {
+        color: $placeholder;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      :active,
+      :focus {
+        color: $placeholder;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      ::-webkit-search-cancel-button {
+        display: none;
+      }
+      button {
+        padding: 10px 42px;
+        background: $mainColor;
+        border-radius: 0 10px 10px 0;
+        color: white;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+.categories {
+  background-color: $sectionBg;
+  padding: 40px 0;
+  h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+  }
+  .categories-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      background-color: #fff;
+      padding: 15px;
+      width: 345px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      transition: 0.5s;
+      &:hover {
+        background-color: $mainColor;
+        color: white;
+        p {
+          color: white;
+        }
+      }
+      h3 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31px;
+        text-align: center;
+      }
+      p {
+        transition: 0.5s;
+        text-align: center;
+        width: 80%;
+        font-size: 14px;
+        line-height: 18px;
+        color: $paragraphGrey;
+      }
+    }
+  }
+  .questions-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card {
+      width: 340px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      margin-bottom: 30px;
+      padding: 13px 20px;
+      border-radius: 10px;
+      img {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        margin-right: 6px;
+      }
+      h5 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: $headerBlack;
+        margin: 0;
+      }
+      p {
+        font-size: 12px;
+        line-height: 16px;
+        color: $paragraphGrey;
+        margin: 0;
+      }
+
+      .date-comments {
+        display: flex;
+        align-items: center;
+        .date,
+        .comment {
+          color: $paragraphGrey;
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          line-height: 16px;
+          margin-right: 3px;
+          .MuiSvgIcon-root {
+            font-size: 12px;
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+}

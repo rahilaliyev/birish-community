@@ -1,0 +1,27 @@
+@font-face {
+  font-display: swap;
+  font-family: SofiaPro;
+  font-weight: 400;
+  src: url(../fonts/SofiaProRegularAz.otf);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: SofiaPro;
+  font-weight: 600;
+  src: url(../fonts/SofiaProSemiBoldAz.otf);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: SofiaPro;
+  font-weight: 700;
+  src: url(../fonts/SofiaProBoldAz.otf);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: SofiaPro;
+  font-weight: 900;
+  src: url(../fonts/SofiaProBlackAz.otf);
+}

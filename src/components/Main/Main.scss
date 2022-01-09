@@ -1,0 +1,198 @@
+@import "../../assets/styles/variables.scss";
+
+.main-page-container {
+  background-image: url(../../assets/images/headerPhoto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 660px;
+  .main-text {
+    height: 100%;
+    .main-page-text {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      height: 75%;
+      p {
+        width: 50%;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      button {
+        border-radius: 10px;
+        color: white;
+        &:first-child {
+          background: $mainColor;
+          margin-right: 20px;
+        }
+        &:last-child {
+          border: 1px solid #ffffff;
+        }
+        a {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .main-page-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .cards {
+      width: 260px;
+      height: 300px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 0 30px;
+      p {
+        font-size: 14px;
+        color: $paragraphGrey;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.help {
+  background: $sectionBg;
+  padding: 200px 0 60px 0;
+  h2 {
+    text-align: center;
+    font-weight: 400;
+  }
+  .helpCards {
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .card-text {
+        width: 80%;
+        h3 {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0em;
+        }
+        p {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $paragraphGrey;
+        }
+      }
+      a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: center;
+        color: $mainColor;
+        width: 20%;
+      }
+    }
+  }
+}
+
+.how-works {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .section-text {
+    width: 40%;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 47px;
+      color: $paragraphGrey;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 31px;
+      font-weight: 400;
+    }
+    p {
+      width: 80%;
+      font-size: 14px;
+      line-height: 18px;
+      color: $paragraphGrey;
+    }
+    button {
+      border: 1px solid $mainColor;
+      border-radius: 10px;
+      color: $mainColor;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}
+
+.solution {
+  padding: 80px 0 0 0;
+  background-color: $sectionBg;
+  .solution-wrapper {
+    background-image: url(../../assets/images/SolutionBanner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    .solution-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31px;
+        text-align: center;
+        margin-bottom: 0;
+        span {
+          color: $mainColor;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        width: 34%;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: $mainColor;
+        color: white;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+      }
+    }
+  }
+}
