@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/birish-community/static/css/main.bd40c026.css",
+    "main.js": "/birish-community/static/js/main.adaf4aae.js",
+    "static/media/headerPhoto.png": "/birish-community/static/media/headerPhoto.9ef300fcbabfb6ab33f4.png",
+    "static/media/searchBgImage.png": "/birish-community/static/media/searchBgImage.6aaf07e98817970a3bf5.png",
+    "static/media/howWorks.png": "/birish-community/static/media/howWorks.d6d23097163849f01d73.png",
+    "static/media/SofiaProSemiBoldAz.otf": "/birish-community/static/media/SofiaProSemiBoldAz.2044892426acfe16ed20.otf",
+    "static/media/SofiaProBoldAz.otf": "/birish-community/static/media/SofiaProBoldAz.48c71aa3dea90cd4f94e.otf",
+    "static/media/SofiaProBlackAz.otf": "/birish-community/static/media/SofiaProBlackAz.f4bdd0977e78f635b786.otf",
+    "static/media/SofiaProRegularAz.otf": "/birish-community/static/media/SofiaProRegularAz.d36998f5d9772461be21.otf",
+    "static/media/SolutionBanner.png": "/birish-community/static/media/SolutionBanner.3600ee0ad8c583cf9ce9.png",
+    "index.html": "/birish-community/index.html",
+    "main.bd40c026.css.map": "/birish-community/static/css/main.bd40c026.css.map",
+    "main.adaf4aae.js.map": "/birish-community/static/js/main.adaf4aae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd40c026.css",
+    "static/js/main.adaf4aae.js"
+  ]
+}
