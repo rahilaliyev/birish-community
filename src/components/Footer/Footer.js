@@ -21,56 +21,54 @@ const Footer = () => {
         <ul>
           Kateqoriyalar
           <li>
-            <Link to="https://birish.net/categories/qrafik-dizayn">
+            <a href="https://birish.net/categories/qrafik-dizayn">
               Qrafik Dizayn
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://birish.net/categories/rqmsal-marketinq">
+            <a href="https://birish.net/categories/rqmsal-marketinq">
               Rəqəmsal Marketinq
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://birish.net/categories/yaz-amp-trcm">
+            <a href="https://birish.net/categories/yaz-amp-trcm">
               Yazı & Tərcümə
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://birish.net/categories/video-amp-animasiya">
+            <a href="https://birish.net/categories/video-amp-animasiya">
               Video & Animasiya
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://birish.net/categories/proqramladrma">
+            <a href="https://birish.net/categories/proqramladrma">
               Proqramlaşdırma
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://birish.net/categories/biznes">Biznes </Link>
+            <a href="https://birish.net/categories/biznes">Biznes </a>
           </li>
           <li>
-            <Link to="https://birish.net/categories/musiqi-amp-audio">
+            <a href="https://birish.net/categories/musiqi-amp-audio">
               Musiqi & Audio
-            </Link>
+            </a>
           </li>
         </ul>
         <ul>
           Haqqımızda
           <li>
-            <Link to="https://birish.net/terms_and_conditions">
+            <a href="https://birish.net/terms_and_conditions">
               Şərtlər və Qaydalar
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://birish.net/customer_support">
-              Müştəri Dəstəyi
-            </Link>
+            <a href="https://birish.net/customer_support">Müştəri Dəstəyi</a>
           </li>
           <li>
-            <Link to="https://birish.net/how-it-works">Necə İşləyir?</Link>
+            <a href="https://birish.net/how-it-works">Necə İşləyir?</a>
           </li>
           <li>
-            <Link to="https://birish.net/blog/">Bloq</Link>
+            <a href="https://birish.net/blog/">Bloq</a>
           </li>
           <li>
             <Link to="#">Forum</Link>

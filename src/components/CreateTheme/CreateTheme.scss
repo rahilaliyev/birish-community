@@ -1,0 +1,77 @@
+@import "../../assets/styles/variables.scss";
+
+.creatingTheme {
+  background-color: $sectionBg;
+  padding: 20px 0;
+  .pageheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    form {
+      display: flex;
+      .search-input {
+        position: relative;
+        input {
+          width: 422px;
+          height: 43px;
+          padding: 10px 20px;
+          background: white;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+        }
+        ::placeholder {
+          font-size: 18px;
+          line-height: 23px;
+        }
+        ::-webkit-search-cancel-button {
+          display: none;
+        }
+        button {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    .userDetails {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 18px;
+      .profileDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        &:not(:last-child) {
+          border-right: 2px solid $headerBlack;
+          padding-right: 10px;
+        }
+        span {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .section-header {
+    margin: 25px 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 30px 33px 47px 33px;
+    box-shadow: 0px 4px 0px #53d86a;
+    border-radius: 10px;
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 47px;
+      margin: 0;
+    }
+    p {
+      font-size: 24px;
+      line-height: 31px;
+      margin: 0;
+      color: $paragraphGrey;
+    }
+  }
+}

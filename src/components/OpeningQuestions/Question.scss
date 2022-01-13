@@ -1,0 +1,214 @@
+@import "../../assets/styles/variables.scss";
+.question {
+  background-color: $sectionBg;
+  padding: 50px 0;
+  .pageheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    form {
+      display: flex;
+      .search-input {
+        position: relative;
+        input {
+          width: 422px;
+          height: 43px;
+          padding: 10px 20px;
+          background: white;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+        }
+        ::placeholder {
+          font-size: 18px;
+          line-height: 23px;
+        }
+        ::-webkit-search-cancel-button {
+          display: none;
+        }
+        button {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    .userDetails {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 18px;
+      .profileDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        &:not(:last-child) {
+          border-right: 2px solid $headerBlack;
+          padding-right: 10px;
+        }
+        span {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .main-question {
+    background-color: #fff;
+    width: 100%;
+    padding: 30px 33px 47px 33px;
+    box-shadow: 0px 4px 0px #53d86a;
+    border-radius: 10px;
+    margin: 25px 0;
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 47px;
+      margin: 10px 0;
+    }
+    .userQuestionInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .userImageAndDetails {
+        display: flex;
+        .userImage {
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+          }
+        }
+        .userDetails {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          p {
+            font-size: 18px;
+            line-height: 23px;
+            margin: 0;
+            color: $paragraphGrey;
+            span {
+              color: black;
+            }
+          }
+          .date {
+            font-size: 14px;
+            line-height: 18px;
+            color: $paragraphGrey;
+            span {
+              color: black;
+            }
+          }
+        }
+      }
+      .likes,
+      .answers {
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .questionsAndReplyButtons {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      font-size: 18px;
+      line-height: 23px;
+      &:first-child {
+        border: 1px solid $headerBlack;
+        border-radius: 10px;
+      }
+      &:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $mainColor;
+        border-radius: 10px;
+        color: white;
+        margin-left: 15px;
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .mainQuestionContent {
+    margin: 30px 0;
+    h3 {
+      border-radius: 10px 10px 0px 0px;
+      width: 100%;
+      background-color: $mainColor;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 31px;
+      padding: 15px 33px;
+      color: white;
+      margin-bottom: 0;
+    }
+    .similiarQuestion {
+      background-color: #d8d8d8;
+      color: black;
+    }
+    .questionContent {
+      border-radius: 0px 0px 10px 10px;
+      display: flex;
+      padding: 35px;
+      background-color: white;
+      .questionImage {
+        img {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .questionText {
+        margin-left: 20px;
+        padding: 20px 0;
+        span {
+          color: $paragraphGrey;
+          font-size: 18px;
+          line-height: 23px;
+        }
+        p {
+          font-size: 24px;
+          line-height: 31px;
+        }
+      }
+      .questionSimiliarText {
+        margin-left: 20px;
+        span {
+          color: $paragraphGrey;
+          font-size: 18px;
+          line-height: 23px;
+        }
+        p {
+          font-size: 24px;
+          line-height: 31px;
+          margin-bottom: 10px;
+        }
+        .replyAndLikeButtons {
+          display: flex;
+          justify-content: flex-end;
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .MuiSvgIcon-root {
+              margin-right: 5px;
+            }
+            span {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
