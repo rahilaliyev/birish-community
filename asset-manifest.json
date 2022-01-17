@@ -1,14 +1,10 @@
 {
   "files": {
-    "main.css": "/birish-community/static/css/main.4926df5a.css",
-    "main.js": "/birish-community/static/js/main.ee792584.js",
+    "main.css": "/birish-community/static/css/main.9e4dfe28.css",
+    "main.js": "/birish-community/static/js/main.5bb50859.js",
     "static/media/headerPhoto.png": "/birish-community/static/media/headerPhoto.9ef300fcbabfb6ab33f4.png",
     "static/media/searchBgImage.png": "/birish-community/static/media/searchBgImage.6aaf07e98817970a3bf5.png",
     "static/media/howWorks.png": "/birish-community/static/media/howWorks.d6d23097163849f01d73.png",
-    "static/media/Roboto-Medium.ttf": "/birish-community/static/media/Roboto-Medium.7429a63c09f79a1760b0.ttf",
-    "static/media/Roboto-Regular.ttf": "/birish-community/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
-    "static/media/Roboto-Bold.ttf": "/birish-community/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
-    "static/media/Roboto-Light.ttf": "/birish-community/static/media/Roboto-Light.8be2d1487420548b3b8d.ttf",
     "static/media/SofiaProSemiBoldAz.otf": "/birish-community/static/media/SofiaProSemiBoldAz.2044892426acfe16ed20.otf",
     "static/media/SofiaProBoldAz.otf": "/birish-community/static/media/SofiaProBoldAz.48c71aa3dea90cd4f94e.otf",
     "static/media/SofiaProBlackAz.otf": "/birish-community/static/media/SofiaProBlackAz.f4bdd0977e78f635b786.otf",
@@ -17,11 +13,11 @@
     "static/media/questionPageProfileImage.png": "/birish-community/static/media/questionPageProfileImage.0f186c1cba9462606f1d.png",
     "static/media/questionPageProfilePicture.png": "/birish-community/static/media/questionPageProfilePicture.9da708767c94d2088952.png",
     "index.html": "/birish-community/index.html",
-    "main.4926df5a.css.map": "/birish-community/static/css/main.4926df5a.css.map",
-    "main.ee792584.js.map": "/birish-community/static/js/main.ee792584.js.map"
+    "main.9e4dfe28.css.map": "/birish-community/static/css/main.9e4dfe28.css.map",
+    "main.5bb50859.js.map": "/birish-community/static/js/main.5bb50859.js.map"
   },
   "entrypoints": [
-    "static/css/main.4926df5a.css",
-    "static/js/main.ee792584.js"
+    "static/css/main.9e4dfe28.css",
+    "static/js/main.5bb50859.js"
   ]
 }
