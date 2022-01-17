@@ -1,10 +1,11 @@
-import React from "react";
-import PageHeader from "../OpeningQuestions/PageHeader";
+import React, { useState } from "react";
+import PageHeader from "../QuestionsDetails/PageHeader";
 import "./CreateTheme.scss";
-import "../OpeningQuestions/Question.scss";
+import "../QuestionsDetails/Question.scss";
 import AddIcon from "@mui/icons-material/Add";
 
 const CreateTheme = () => {
+  const [textarea, setTextarea] = useState("");
   return (
     <section className="creatingTheme">
       <div className="creatingTheme-container container">
@@ -12,8 +13,10 @@ const CreateTheme = () => {
         <form>
           <div className="section-header">
             <h2>Yeni Mövzu Yarat</h2>
-            <label htmlFor="header">Başlıq</label>
-            <input type="text" />
+            <div className="input-element">
+              <label htmlFor="header">Başlıq</label>
+              <input type="text" />
+            </div>
           </div>
           <div className="buttonForEtiquette">
             <button>
@@ -25,7 +28,12 @@ const CreateTheme = () => {
             id="textarea"
             cols="30"
             rows="10"
+            value={textarea}
+            onChange={(e) => setTextarea(e.target.value)}
           ></textarea>
+          <div className="submit">
+            <button type="submit">Göndər</button>
+          </div>
         </form>
       </div>
     </section>

@@ -24,7 +24,7 @@ const Help = () => {
           <div className="card">
             <div className="card-text">
               <h3>
-                Təcrübəniz olmasa belə Filanser olaraq edə biləcəyiniz işlər
+                Təcrübəniz olmasa belə Frilanser olaraq edə biləcəyiniz işlər
                 hansılardır?
               </h3>
               <p>

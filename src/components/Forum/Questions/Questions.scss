@@ -28,16 +28,24 @@
     display: flex;
     justify-content: flex-end;
     .create {
-      width: 180px;
-      height: 45px;
-      background-color: $mainColor;
       a {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         font-size: 18px;
         line-height: 23px;
         color: white;
+        width: 180px;
+        height: 45px;
+        border-radius: 10px;
+        padding: 0 7px;
+        background-color: $mainColor;
+        border: 1px solid $mainColor;
+        &:hover {
+          background-color: #fff;
+          color: $mainColor;
+          border: 1px solid $mainColor;
+        }
       }
     }
   }
@@ -71,6 +79,7 @@
         button {
           position: absolute;
           right: 0;
+          padding: 10px;
         }
       }
     }
@@ -83,6 +92,9 @@
           font-size: 20px;
           line-height: 26px;
           color: white;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

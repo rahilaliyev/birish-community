@@ -30,6 +30,7 @@
         button {
           position: absolute;
           right: 0;
+          padding: 10px;
         }
       }
     }
@@ -67,11 +68,76 @@
       line-height: 47px;
       margin: 0;
     }
-    p {
-      font-size: 24px;
-      line-height: 31px;
-      margin: 0;
-      color: $paragraphGrey;
+    .input-element {
+      display: flex;
+      flex-direction: column;
+      margin-top: 17px;
+      label {
+        font-size: 18px;
+        line-height: 23px;
+        color: $paragraphGrey;
+        margin-bottom: 5px;
+      }
+      input {
+        border: 1px solid #d8d8d8;
+        outline: none;
+        height: 55px;
+        font-size: 18px;
+        line-height: 23px;
+        padding: 20px;
+      }
+    }
+  }
+  .buttonForEtiquette {
+    button {
+      background-color: $mainColor;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      width: 180px;
+      color: white;
+      font-size: 18px;
+      line-height: 23px;
+      border: 1px solid $mainColor;
+      &:hover {
+        background: none;
+        border: 1px solid black;
+        color: black;
+      }
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 185px;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 20px;
+  }
+  .submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    button {
+      margin-top: 10px;
+      background-color: $mainColor;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      width: 100px;
+      color: white;
+      font-size: 18px;
+      line-height: 23px;
+      border: 1px solid $mainColor;
+      &:hover {
+        background: none;
+        border: 1px solid black;
+        color: black;
+      }
     }
   }
 }

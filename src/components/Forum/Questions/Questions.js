@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
-import { Link } from "react-router-dom";
-
+import { Link, useParams } from "react-router-dom";
 import "./Questions.scss";
 import Table from "./Table/Table";
 import Modal from "react-modal";
@@ -12,6 +11,8 @@ import SearchInput from "./SearchInput";
 Modal.setAppElement("#root");
 const Questions = () => {
   const [isCategoryModalOpen, setisCategoryModalOpen] = useState(false);
+  const { categoryId } = useParams();
+
   return (
     <section className="questions">
       <div className="questions-container container">
@@ -37,13 +38,15 @@ const Questions = () => {
           <SearchInput />
           <ul>
             <li>
-              <Link to="#"> Şərtlər və Qaydalar</Link>
+              <a href="https://birish.net/terms_and_conditions">
+                Şərtlər və Qaydalar
+              </a>
             </li>
             <li>
-              <Link to="#"> Müştəri dəstəyi</Link>
+              <a href="https://birish.net/customer_support"> Müştəri dəstəyi</a>
             </li>
             <li>
-              <Link to="#"> Necə Çalışır</Link>
+              <a href="https://birish.net/how-it-works"> Necə Çalışır</a>
             </li>
           </ul>
         </div>
@@ -83,12 +86,23 @@ const Questions = () => {
           </div>
           <form>
             <select defaultValue={"DEFAULT"}>
-              <option className="main-select" value="DEFAULT" selected disabled>
+              <option className="main-select" value="DEFAULT" selected>
                 Kateqoriya seçin
+              </option>
+              <option className="main-select" value="Numune1">
+                Numune 1
+              </option>
+              <option className="main-select" value="Numune2">
+                Numune 2
+              </option>
+              <option className="main-select" value="Numune3">
+                Numune 3
               </option>
             </select>
 
-            <button type="submit">Davam et</button>
+            <button type="submit">
+              <Link to="/createTheme">Davam et</Link>
+            </button>
           </form>
         </div>
       </Modal>

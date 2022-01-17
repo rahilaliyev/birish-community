@@ -33,6 +33,7 @@
       align-items: center;
       height: 40px;
       border-radius: 10px;
+
       .page-link {
         cursor: pointer;
         display: flex;
@@ -98,12 +99,13 @@
         h3 {
           margin: 0;
           margin-bottom: 5px;
-          font-family: Roboto;
           font-size: 16px;
           font-weight: 500;
           line-height: 20px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
-
         .who-and-date {
           display: flex;
           align-items: center;
@@ -111,16 +113,13 @@
           font-weight: 400;
           line-height: 20px;
           .who {
-            font-family: Roboto;
             color: $paragraphGrey;
             span {
-              font-family: Roboto;
               color: $headerBlack;
               font-weight: 500;
             }
           }
           .date {
-            font-family: Roboto;
             color: $headerBlack;
             padding-left: 35px;
           }
@@ -137,13 +136,11 @@
         flex-direction: column;
         align-items: center;
         margin-left: 25px;
-        font-family: Roboto;
         font-size: 14px;
         font-weight: 300;
         line-height: 20px;
         color: $placeholder;
         span {
-          font-family: Roboto;
           font-size: 16px;
           font-weight: 600;
           line-height: 20px;

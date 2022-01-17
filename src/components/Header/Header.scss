@@ -20,7 +20,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      li {  
+      li {
         .active {
           border-bottom: 5px solid $mainColor;
         }
@@ -31,9 +31,12 @@ header {
           letter-spacing: 0em;
           text-align: center;
           padding: 27px 30px;
+        
+          &:hover {
+            color: $mainColor;
+          }
         }
         button {
-          border: 1px solid $mainColor;
           margin-left: 20px;
           a {
             color: $mainColor;
@@ -41,7 +44,15 @@ header {
         }
         &:last-child {
           a {
-            padding: 0;
+            padding: 10px 20px;
+            height: 20px;
+            border: 1px solid #53d86a;
+            border-radius: 10px;
+
+            &:hover {
+              background-color: $mainColor;
+              color: white;
+            }
           }
         }
       }

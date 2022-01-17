@@ -32,28 +32,34 @@ const Main = () => {
           </div>
           <div className="main-page-cards">
             <div className="cards">
-              <img src={ChatIconImage} alt="CardImage" />
-              <h3>Müştəri Dəstəyi</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Volutpat congue amet sit.
-              </p>
+              <a href="https://birish.net/customer_support">
+                <img src={ChatIconImage} alt="CardImage" />
+                <h3>Müştəri Dəstəyi</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat congue amet sit.
+                </p>
+              </a>
             </div>
             <div className="cards">
-              <img src={CustomerIconImage} alt="CardImage" />
-              <h3>Şərtlər və Qaydalar</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Volutpat congue amet sit.
-              </p>
+              <a href="https://birish.net/terms_and_conditions">
+                <img src={CustomerIconImage} alt="CardImage" />
+                <h3>Şərtlər və Qaydalar</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat congue amet sit.
+                </p>
+              </a>
             </div>
             <div className="cards">
-              <img src={RulesIconImage} alt="CardImage" />
-              <h3>Necə Çalışır?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Volutpat congue amet sit.
-              </p>
+              <a href="https://birish.net/how-it-works">
+                <img src={RulesIconImage} alt="CardImage" />
+                <h3>Necə Çalışır?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat congue amet sit.
+                </p>
+              </a>
             </div>
           </div>
         </div>

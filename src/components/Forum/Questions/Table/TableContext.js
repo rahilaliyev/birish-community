@@ -1,57 +1,12 @@
 import React from "react";
-import profilePhoto from "../../../../assets/images/Thumbnail.png";
+import { tableData } from "../../../../data";
+import { Link, useParams } from "react-router-dom";
 
 const TableContext = () => {
-  const tableData = [
-    {
-      id: 1,
-      name: "Sahib",
-      questions: "More time bought for recording than the gig allows?",
-      image: profilePhoto,
-      date: "12 Dekabr 2021",
-      views: "156",
-      answers: "20",
-    },
-    {
-      id: 2,
-      name: "Sahib",
-      questions: "More time bought for recording than the gig allows?",
-      image: profilePhoto,
-      date: "12 Dekabr 2021",
-      views: "156",
-      answers: "20",
-    },
-    {
-      id: 3,
-      name: "Sahib",
-      questions: "More time bought for recording than the gig allows?",
-      image: profilePhoto,
-      date: "12 Dekabr 2021",
-      views: "156",
-      answers: "20",
-    },
-    {
-      id: 4,
-      name: "Sahib",
-      questions: "More time bought for recording than the gig allows?",
-      image: profilePhoto,
-      date: "12 Dekabr 2021",
-      views: "156",
-      answers: "20",
-    },
-    {
-      id: 5,
-      name: "Sahib",
-      questions: "More time bought for recording than the gig allows?",
-      image: profilePhoto,
-      date: "12 Dekabr 2021",
-      views: "156",
-      answers: "20",
-    },
-  ];
-
+  const { questionId } = useParams();
   return (
     <div className="table-context">
+      <h1>{questionId}</h1>
       {tableData.map((question) => (
         <div className="questions-card" key={question.id}>
           <div className="card-info">
@@ -59,7 +14,9 @@ const TableContext = () => {
               <img src={question.image} alt="ProfilePicture" />
             </div>
             <div className="card-texts">
-              <h3>{question.questions}</h3>
+              <Link to={"/questionId"}>
+                <h3>{question.questions}</h3>
+              </Link>
               <div className="who-and-date">
                 <div className="who">
                   <span> {question.name}</span> tərəfindən yaradılıb.

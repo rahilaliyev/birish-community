@@ -21,9 +21,7 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <NavLink activeClassName="active" to="/forum">
-                Forum
-              </NavLink>
+              <NavLink to="/forum">Forum</NavLink>
             </li>
             <li>
               <NavLink to="/blog">Bloq</NavLink>

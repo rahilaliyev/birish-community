@@ -6,7 +6,7 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Forum from "./components/Forum/Forum";
 import Questions from "./components/Forum/Questions/Questions";
-import Question from "./components/OpeningQuestions/Question";
+import QuestionDetails from "./components/QuestionsDetails/QuestionDetails";
 import CreateTheme from "./components/CreateTheme/CreateTheme";
 
 const App = () => {
@@ -17,14 +17,14 @@ const App = () => {
         <Route path="/" exact>
           <Main />
         </Route>
-        <Route path="/forum">
+        <Route path="/forum" exact>
           <Forum />
         </Route>
-        <Route path="/questions">
+        <Route path="/forum/:categoryId">
           <Questions />
         </Route>
-        <Route path="/openingQuestion">
-          <Question />
+        <Route path="/questionId">
+          <QuestionDetails />
         </Route>
         <Route path="/createTheme">
           <CreateTheme />
