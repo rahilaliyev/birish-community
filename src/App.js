@@ -8,6 +8,7 @@ import Forum from "./components/Forum/Forum";
 import Questions from "./components/Forum/Questions/Questions";
 import QuestionDetails from "./components/QuestionsDetails/QuestionDetails";
 import CreateTheme from "./components/CreateTheme/CreateTheme";
+import "./assets/styles/responsive.scss";
 
 const App = () => {
   return (

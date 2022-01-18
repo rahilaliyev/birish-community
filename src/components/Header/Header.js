@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink, useRouteMatch } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png";
 import "./Header.scss";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
   const forumRoute = useRouteMatch("/forum");
+  const [openMenu, setopenMenu] = useState(false);
   return (
     <header className="container">
       <div className="logo">
@@ -18,7 +20,7 @@ const Header = () => {
         )}
       </div>
       <div className="navbar">
-        <nav>
+        <nav className={openMenu ? "hidden" : ""}>
           <ul>
             <li>
               <NavLink to="/forum">Forum</NavLink>
@@ -33,6 +35,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <button className="hamburger" onClick={() => setopenMenu(!openMenu)}>
+          <MenuIcon />
+        </button>
       </div>
     </header>
   );

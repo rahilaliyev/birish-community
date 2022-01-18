@@ -1,0 +1,129 @@
+@import "./variables.scss";
+
+@media only screen and (max-width: 1024px) {
+  .how-works {
+    flex-direction: column;
+    .section-text {
+      text-align: center;
+      width: 70%;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .help {
+    padding: 60px 0;
+    .help-container {
+      .main-page-cards {
+        position: static;
+        flex-wrap: wrap;
+        .cards {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .solution {
+    .solution-wrapper {
+      .solution-container {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      div {
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    .hamburger {
+      display: block;
+    }
+    nav {
+      display: none;
+      ul {
+        flex-direction: column;
+        li {
+          margin-bottom: 20px;
+          &:last-child {
+            button {
+              margin-left: 0;
+              a {
+                background-color: white;
+                color: $mainColor;
+              }
+            }
+          }
+          a {
+            padding: 0;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .main-page-container {
+    padding: 200px 10px;
+    .main-text {
+      .main-page-text {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .help {
+    .help-container {
+      .main-page-cards {
+        .cards {
+          flex-direction: column;
+        }
+      }
+      .helpCards {
+        padding: 20px;
+        .card {
+          flex-direction: column;
+          .card-text {
+            width: 100%;
+          }
+          a {
+            width: 100%;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .help {
+    .help-container {
+      .main-page-cards {
+        padding: 20px;
+        .cards {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

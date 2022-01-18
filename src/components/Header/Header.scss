@@ -31,7 +31,7 @@ header {
           letter-spacing: 0em;
           text-align: center;
           padding: 27px 30px;
-        
+
           &:hover {
             color: $mainColor;
           }
@@ -57,5 +57,19 @@ header {
         }
       }
     }
+  }
+  .hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    height: 200px;
+    width: 100%;
+    background-color: $mainColor;
+  }
+  .hamburger {
+    display: none;
   }
 }
