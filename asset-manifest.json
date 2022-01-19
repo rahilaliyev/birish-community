@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/birish-community/static/css/main.5ed1fb4f.css",
+    "main.css": "/birish-community/static/css/main.a4e64cc8.css",
     "main.js": "/birish-community/static/js/main.c42fc5db.js",
     "static/media/headerPhoto.png": "/birish-community/static/media/headerPhoto.9ef300fcbabfb6ab33f4.png",
     "static/media/searchBgImage.png": "/birish-community/static/media/searchBgImage.6aaf07e98817970a3bf5.png",
@@ -13,11 +13,11 @@
     "static/media/questionPageProfileImage.png": "/birish-community/static/media/questionPageProfileImage.0f186c1cba9462606f1d.png",
     "static/media/questionPageProfilePicture.png": "/birish-community/static/media/questionPageProfilePicture.9da708767c94d2088952.png",
     "index.html": "/birish-community/index.html",
-    "main.5ed1fb4f.css.map": "/birish-community/static/css/main.5ed1fb4f.css.map",
+    "main.a4e64cc8.css.map": "/birish-community/static/css/main.a4e64cc8.css.map",
     "main.c42fc5db.js.map": "/birish-community/static/js/main.c42fc5db.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ed1fb4f.css",
+    "static/css/main.a4e64cc8.css",
     "static/js/main.c42fc5db.js"
   ]
 }
