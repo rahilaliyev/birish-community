@@ -23,10 +23,22 @@ const Header = () => {
         <nav className={openMenu ? "hidden" : ""}>
           <ul>
             <li>
-              <NavLink to="/forum">Forum</NavLink>
+              <NavLink
+                to="/forum"
+                activeClassName="active"
+                onClick={() => setopenMenu(false)}
+              >
+                Forum
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Bloq</NavLink>
+              <NavLink
+                to="/blog"
+                activeClassName="active"
+                onClick={() => setopenMenu(false)}
+              >
+                Bloq
+              </NavLink>
             </li>
             <li>
               <button>
