@@ -23,9 +23,9 @@ const CreateTheme = () => {
               <AddIcon /> <span>Etiket əlavə et</span>
             </button>
           </div>
-          {/* <div className="text-editor-submit">
+          <div className="text-editor-submit">
             <TextEditor />
-          </div> */}
+          </div>
           <div className="submit">
             <button type="submit">Göndər</button>
           </div>

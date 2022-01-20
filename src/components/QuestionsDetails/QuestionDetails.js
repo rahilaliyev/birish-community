@@ -24,12 +24,12 @@ const Question = () => {
             <ReplyIcon /> <span> Cavab ver</span>
           </button>
         </div>
-        {/* {opentextarea ? (
+        {opentextarea ? (
           <form className="text-editor-submit">
             <TextEditor />
             <button type="submit" className="submit">Göndər</button>
           </form>
-        ) : null} */}
+        ) : null}
         <MainQuestion />
         <div className="questionsAndReplyButtons">
           <button>Ən çox bəyənilən</button>
