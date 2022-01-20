@@ -4,7 +4,7 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 const TextEditor = () => {
   return (
-    <div className="text-editor">
+    <div className="text-editor" >
       <CKEditor editor={ClassicEditor} data="" />
     </div>
   );
