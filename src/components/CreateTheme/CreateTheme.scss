@@ -107,14 +107,34 @@
       }
     }
   }
-  textarea {
-    width: 100%;
-    height: 185px;
-    margin-top: 40px;
-    outline: none;
-    border: none;
-    resize: none;
-    padding: 20px;
+  .text-editor-submit {
+    position: relative;
+    .text-editor {
+      margin: 40px 0;
+      .ck-rounded-corners {
+        .ck.ck-editor__top {
+          .ck.ck-toolbar {
+            border: none;
+            background-color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            .ck-toolbar__items {
+              justify-content: space-between;
+            }
+            .ck.ck-toolbar__separator {
+              background: none;
+            }
+          }
+        }
+        .ck.ck-editor__main > .ck-editor__editable {
+          height: 350px;
+          border-radius: 0 0 10px 10px;
+          &:not(.ck-focused) {
+            border: none;
+          }
+        }
+      }
+    }
   }
   .submit {
     display: flex;

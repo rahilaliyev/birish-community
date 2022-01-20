@@ -5,10 +5,10 @@ import QuestionHeader from "./QuestionHeader";
 import ReplyIcon from "@mui/icons-material/Reply";
 import MainQuestion from "./MainQuestion";
 import SimiliarQuestion from "./SimiliarQuestion";
+import TextEditor from "./TextEditor";
 
 const Question = () => {
   const [opentextarea, opensettextarea] = useState(false);
-  const [textarea, setTextarea] = useState("");
 
   const openingTextarea = () => {
     opensettextarea(true);
@@ -25,12 +25,9 @@ const Question = () => {
           </button>
         </div>
         {opentextarea ? (
-          <form className="textarea">
-            <textarea
-              value={textarea}
-              onChange={(e) => setTextarea(e.target.value)}
-            ></textarea>
-            <button type="submit">Göndər</button>
+          <form className="text-editor-submit">
+            <TextEditor />
+            <button type="submit" className="submit">Göndər</button>
           </form>
         ) : null}
         <MainQuestion />

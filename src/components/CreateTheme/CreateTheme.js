@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import PageHeader from "../QuestionsDetails/PageHeader";
 import "./CreateTheme.scss";
 import "../QuestionsDetails/Question.scss";
 import AddIcon from "@mui/icons-material/Add";
+import TextEditor from "../QuestionsDetails/TextEditor";
 
 const CreateTheme = () => {
-  const [textarea, setTextarea] = useState("");
   return (
     <section className="creatingTheme">
       <div className="creatingTheme-container container">
@@ -23,14 +23,9 @@ const CreateTheme = () => {
               <AddIcon /> <span>Etiket əlavə et</span>
             </button>
           </div>
-          <textarea
-            name="textarea"
-            id="textarea"
-            cols="30"
-            rows="10"
-            value={textarea}
-            onChange={(e) => setTextarea(e.target.value)}
-          ></textarea>
+          <div className="text-editor-submit">
+            <TextEditor />
+          </div>
           <div className="submit">
             <button type="submit">Göndər</button>
           </div>
