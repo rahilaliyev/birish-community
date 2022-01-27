@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchInput from "../Forum/Questions/SearchInput";
 import "./Question.scss";
 import AddIcon from "@mui/icons-material/Add";
