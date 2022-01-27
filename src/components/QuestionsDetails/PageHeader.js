@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchInput from "../Forum/Questions/SearchInput";
 import "./Question.scss";
 import AddIcon from "@mui/icons-material/Add";
@@ -6,6 +6,7 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import profileThumbnail from "../../assets/images/profileThumbnail.png";
+import { Link } from "react-router-dom";
 
 const PageHeader = () => {
   return (
@@ -19,9 +20,17 @@ const PageHeader = () => {
           <NotificationsNoneIcon /> <MailOutlineIcon />
         </div>
         <div className="profileDetails">
-          <KeyboardArrowDownIcon />
-          <span>imranovic</span>
-          <img src={profileThumbnail} alt="profilePicture" />
+          <div className="profileInfo">
+            <div className="profileInfoDetails">
+              <KeyboardArrowDownIcon />
+              <span>imranovic</span>
+              <img src={profileThumbnail} alt="profilePicture" />
+            </div>
+          </div>
+
+          <div className="profileLogout">
+            <Link to="#">Hesabdan çıxış</Link>
+          </div>
         </div>
       </div>
     </div>

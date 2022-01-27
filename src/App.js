@@ -21,13 +21,13 @@ const App = () => {
         <Route path="/forum" exact>
           <Forum />
         </Route>
-        <Route path="/forum/:categoryId">
+        <Route path="/forum/:categoryId" exact>
           <Questions />
         </Route>
-        <Route path="/questionId">
+        <Route path="/questionId" exact>
           <QuestionDetails />
         </Route>
-        <Route path="/createTheme">
+        <Route path="/forum/createTheme" exact>
           <CreateTheme />
         </Route>
       </Switch>

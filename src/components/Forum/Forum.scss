@@ -130,6 +130,7 @@
       &:hover {
         background-color: $mainColor;
         color: white;
+
         p {
           color: white;
         }
@@ -175,6 +176,10 @@
       margin-bottom: 30px;
       padding: 13px 20px;
       border-radius: 10px;
+      transition: 0.5s;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
       img {
         border-radius: 50%;
         height: 40px;

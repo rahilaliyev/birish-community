@@ -8,10 +8,10 @@ import SimiliarQuestion from "./SimiliarQuestion";
 import TextEditor from "./TextEditor";
 
 const Question = () => {
-  const [opentextarea, opensettextarea] = useState(false);
+  const [opentextarea, setOpentextarea] = useState(false);
 
   const openingTextarea = () => {
-    opensettextarea(true);
+    setOpentextarea(true);
   };
   return (
     <div className="question">
@@ -27,7 +27,9 @@ const Question = () => {
         {opentextarea ? (
           <form className="text-editor-submit">
             <TextEditor />
-            <button type="submit" className="submit">Göndər</button>
+            <button type="submit" className="submit">
+              Göndər
+            </button>
           </form>
         ) : null}
         <MainQuestion />
